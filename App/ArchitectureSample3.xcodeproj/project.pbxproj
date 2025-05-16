@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		96E500882DD70AF3008FF123 /* App in Frameworks */ = {isa = PBXBuildFile; productRef = 96E500872DD70AF3008FF123 /* App */; };
+		96E5008A2DD70AF3008FF123 /* TodoDetailScene in Frameworks */ = {isa = PBXBuildFile; productRef = 96E500892DD70AF3008FF123 /* TodoDetailScene */; };
+		96E5008C2DD70AF3008FF123 /* TodoListScene in Frameworks */ = {isa = PBXBuildFile; productRef = 96E5008B2DD70AF3008FF123 /* TodoListScene */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		96E500672DD6FC99008FF123 /* ArchitectureSample3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureSample3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E500852DD6FD72008FF123 /* LocalModules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LocalModules; path = ../LocalModules; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		96E5009C2DD718A9008FF123 /* Exceptions for "ArchitectureSample3" folder in "ArchitectureSample3" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ArchitectureSample3.xctestplan,
+			);
+			target = 96E500662DD6FC99008FF123 /* ArchitectureSample3 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		96E500692DD6FC99008FF123 /* ArchitectureSample3 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				96E5009C2DD718A9008FF123 /* Exceptions for "ArchitectureSample3" folder in "ArchitectureSample3" target */,
+			);
 			path = ArchitectureSample3;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E5008A2DD70AF3008FF123 /* TodoDetailScene in Frameworks */,
+				96E5008C2DD70AF3008FF123 /* TodoListScene in Frameworks */,
+				96E500882DD70AF3008FF123 /* App in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				96E500692DD6FC99008FF123 /* ArchitectureSample3 */,
+				96E500852DD6FD72008FF123 /* LocalModules */,
+				96E500862DD70AF3008FF123 /* Frameworks */,
 				96E500682DD6FC99008FF123 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +68,13 @@
 				96E500672DD6FC99008FF123 /* ArchitectureSample3.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		96E500862DD70AF3008FF123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +97,9 @@
 			);
 			name = ArchitectureSample3;
 			packageProductDependencies = (
+				96E500872DD70AF3008FF123 /* App */,
+				96E500892DD70AF3008FF123 /* TodoDetailScene */,
+				96E5008B2DD70AF3008FF123 /* TodoListScene */,
 			);
 			productName = ArchitectureSample3;
 			productReference = 96E500672DD6FC99008FF123 /* ArchitectureSample3.app */;
@@ -272,10 +307,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Debug;
@@ -311,10 +347,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Release;
@@ -341,6 +378,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96E500872DD70AF3008FF123 /* App */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = App;
+		};
+		96E500892DD70AF3008FF123 /* TodoDetailScene */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoDetailScene;
+		};
+		96E5008B2DD70AF3008FF123 /* TodoListScene */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoListScene;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96E5005F2DD6FC99008FF123 /* Project object */;
 }

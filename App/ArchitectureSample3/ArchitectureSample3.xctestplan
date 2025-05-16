@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "A1FD674E-B378-4E68-ACF4-C31BF96B8875",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ArchitectureSample3.xcodeproj",
+      "identifier" : "96E500662DD6FC99008FF123",
+      "name" : "ArchitectureSample3"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/LocalModules",
+        "identifier" : "DomainTests",
+        "name" : "DomainTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/LocalModules",
+        "identifier" : "InfrastructureTests",
+        "name" : "InfrastructureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

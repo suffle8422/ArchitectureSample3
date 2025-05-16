@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
+import App
 
 @main
 struct ArchitectureSample3App: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        WindowGroup { TopScene() }
     }
 }
