@@ -31,15 +31,9 @@ enum LocalModules: String, CaseIterable {
                 LocalModules.infrastructure.dependency
             ]
         case .todoListScene:
-            dependencies = [
-                LocalModules.core.dependency,
-                LocalModules.coreUI.dependency
-            ]
+            dependencies = LocalModules.forFetureModules
         case .todoDetailScene:
-            dependencies = [
-                LocalModules.core.dependency,
-                LocalModules.coreUI.dependency
-            ]
+            dependencies = LocalModules.forFetureModules
         }
         return .target(
             name: rawValue,
@@ -89,6 +83,11 @@ enum LocalModules: String, CaseIterable {
         .filter { $0 != .app }
         .filter { $0 != .infrastructure }
         .map { $0.dependency }
+    
+    private static let forFetureModules: [Target.Dependency] = [
+        LocalModules.core.dependency,
+        LocalModules.coreUI.dependency
+    ]
 }
 
 let package = Package(
